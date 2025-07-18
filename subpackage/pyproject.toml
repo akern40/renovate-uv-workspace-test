@@ -7,7 +7,7 @@ authors = [
     { name = "Adam Kern", email = "adam.kern@airspace-intelligence.com" },
 ]
 requires-python = ">=3.11"
-dependencies = ["polars"]
+dependencies = ["polars>=0.20.31"]
 
 [build-system]
 requires = ["hatchling"]
