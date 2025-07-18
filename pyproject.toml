@@ -4,15 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = [
-    "numpy",
-]
+dependencies = ["numpy"]
 
 [tool.uv.workspace]
-members = [
-    "subpackage",
-]
-
-[[tool.uv.index]]
-url = "https://uni-codeartifact-209479306031.d.codeartifact.us-east-2.amazonaws.com/pypi/uni-codeartifact/simple"
-default = true
+members = ["subpackage"]

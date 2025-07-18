@@ -2,5 +2,20 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:best-practices"
+  ],
+  "enabledManagers": ["pep621"],
+  "pep621": {
+    "enabled": true
+  },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": false
+  },
+  "packageRules": [
+    {
+      "matchManagers": ["pep621"],
+      "matchFileNames": ["**/pyproject.toml"],
+      "enabled": true
+    }
   ]
 }
